@@ -1,0 +1,458 @@
+/* Reset de Estilos Padrão */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cores */
+:root {
+    --cor-destaque: #c62828;
+    --cor-fundo: #f5f5f5;
+    --cor-texto: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: var(--cor-destaque);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+header button:hover {
+    color: #ff8f8f;
+}
+
+/* Estilos do Navegador */
+nav {
+    background-color: #c62828;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff8f8f;
+}
+
+/* Seção "Objetivos de Desenvolvimento Sustentável (ODS)" */
+#introducao {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#introducao .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#introducao h2 {
+    color: #c62828;
+}
+
+#introducao p {
+    color: #333;
+}
+
+#introducao img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px; /* Adicionei uma margem à esquerda para separar a imagem do texto */
+    cursor: pointer;
+}
+
+/* Adiciona um link à imagem */
+#introducao img {
+    cursor: pointer;
+}
+
+#introducao img:hover {
+    transform: scale(1.05); /* Adiciona um efeito de escala suave ao passar o mouse */
+}
+
+/* Seção de Ícones das ODS */
+#ods-icons {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+#ods-icons h2 {
+    color: #c62828;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ods-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ods-container a {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+}
+
+.ods-container img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ods-container img:hover {
+    transform: scale(1.2);
+}
+
+/* Seção "O que é a ODS 4?" */
+#ods4-o-que-e {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff; /* Adicionado para o contorno branco */
+}
+
+#ods4-o-que-e h2 {
+    color: #c62828;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#ods4-o-que-e p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Imagem acima da frase */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    border: 2px solid #c62828;
+    align-self: flex-start;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    border-color: #ff4d4d;
+}
+
+/* Frase abaixo da imagem */
+.image-quote {
+    color: #c62828;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 20px;
+    border: 2px solid #c62828;
+    border-radius: 8px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    display: inline-block; /* Adicione esta propriedade para centralizar */
+    width: 100%; /* Adicione esta propriedade para centralizar */
+    box-sizing: border-box; /* Adicione esta propriedade para centralizar */
+}
+
+
+
+/* Adicionando uma borda sutil na imagem */
+.image-container img {
+    border: 2px solid #c62828;
+    transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+    border-color: #ff4d4d; /* Cor da borda mais forte ao passar o mouse */
+}
+
+/* Seção "Metas" */
+#metas {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#metas h2 {
+    color: #c62828;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#metas ul {
+    list-style: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#metas li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Seção "Projetos" */
+#projetos {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projetos h2 {
+    color: #c62828;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#projetos p {
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    color: #c62828;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Seção "Mais Informações sobre Educação de Qualidade" */
+#mais-informacoes-educacao {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da seção "Mais Informações sobre Educação de Qualidade" */
+#mais-informacoes h2,
+#mais-informacoes-educacao h2 {
+    color: #c62828;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mais-informacoes-educacao p {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mais-informacoes-educacao .btn {
+    display: inline-block;
+    background-color: #c62828;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#mais-informacoes-educacao .btn:hover {
+    background-color: #ff8f8f;
+}
+
+
+/* Rodapé */
+footer {
+    background-color:#c62828;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Mídia (Media) */
+@media screen and (max-width: 768px) {
+    /* Modificações para telas menores */
+
+    #introducao .content {
+        flex-direction: column;
+    }
+
+    #introducao img {
+        margin-left: 0; /* Remove a margem à esquerda na versão para dispositivos móveis */
+        margin-bottom: 20px; /* Adiciona uma margem inferior na versão para dispositivos móveis */
+    }
+
+    #ods-icons .ods-container {
+        gap: 10px;
+    }
+
+    .project-card {
+        margin: 10px;
+    }
+
+    #mais-informacoes-educacao .btn {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    /* Adicione mais ajustes conforme necessário para outras seções */
+}
+
+/* Título da seção "Fale Conosco" */
+#contato h2 {
+    color: #c62828;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Adicionando efeitos visuais e animações suaves */
+
+/* Transição padrão para suavizar mudanças de estilo */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Efeito de sombra sutil nos cards de projeto */
+.project-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de escala e borda nas imagens */
+.image-container img {
+    transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border: 2px solid #c62828;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    border-color: #ff4d4d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de escala nos ícones das ODS */
+.ods-container img:hover {
+    transform: scale(1.2);
+}
+
+/* Efeito de mudança de cor no botão "Saiba Mais" */
+#mais-informacoes-educacao .btn:hover {
+    background-color: #ff8f8f;
+    color: #fff;
+}
+
+/* Efeito de mudança de cor no botão "Veja mais projetos" */
+#projetos .btn:hover {
+    background-color: #ff8f8f;
+    color: #fff;
+}
+
+/* Efeito de mudança de cor no botão "Envie sua mensagem" */
+#contato .btn:hover {
+    background-color: #ff8f8f;
+    color: #fff;
+}
+
+/* Efeito de mudança de cor nos links de navegação */
+nav a:hover {
+    color: #ff8f8f;
+}
+
+/* Efeito de mudança de cor no botão do cabeçalho */
+header button:hover {
+    color: #ff8f8f;
+}
